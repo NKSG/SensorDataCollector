@@ -10,6 +10,7 @@
 #import "NaviViewController.h"
 #import "StatsViewController.h"
 #import "activityInfo.h"
+#import "KBViewController.h"
 
 @interface SelectActivityViewController ()
 
@@ -71,5 +72,13 @@
     [self.navigationController pushViewController:nextView animated:YES];
     
 }
+
+- (IBAction)TSensorPressed:(id)sender {
+    
+    KBViewController *kbVC = [[KBViewController alloc] initWithNibName:@"KBViewController" bundle:nil];
+    
+    [self.navigationController pushViewController:kbVC animated:YES];
+}
+
 
 @end

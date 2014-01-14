@@ -19,4 +19,5 @@
 @property (strong, nonatomic) NSMutableArray *activityList;
 @property (nonatomic,retain) NSString *activityName;
 @property (nonatomic,retain) IBOutlet UILabel *currentActivityLabel;
+@property (nonatomic,retain) IBOutlet UIButton *tSensor;
 @end

@@ -71,7 +71,7 @@
 - (void)sendDataAcc:(int)id withTime:(double)currenttime withAccX:(double)accX withAccY:(double)accY withAccZ:(double)accZ{
     
     if (true){
-    NSString* dbURL = @"http://128.113.106.108:10035/web-motion-learner/get_data.php";
+    NSString* dbURL = @"http://128.113.106.36:10035/web-motion-learner/get_data.php";
         
     NSURL *url = [NSURL URLWithString:dbURL];
     //Prepare reqeust
@@ -127,7 +127,7 @@
     
     if(true){
     
-    NSString* dbURL = @"http://128.113.106.82:10035/web-motion-learner/get_data.php";
+    NSString* dbURL = @"http://128.113.106.36:10035/web-motion-learner/get_data.php";
         
     NSURL *url = [NSURL URLWithString:dbURL];
     //Prepare reqeust
@@ -199,6 +199,7 @@
         [self sendDataToServer:1 withTime:[[NSDate date] timeIntervalSince1970] withAccX:acceleration.x withAccY:acceleration.y withAccZ:acceleration.z withGyroX:[self.gyroLabelX.text doubleValue] withGyroY:[self.gyroLabelY.text doubleValue] withGyroZ:[self.gyroLabelZ.text doubleValue]];
     */
     
+    
     //Get the current label of gyro regarding this as the current value
     
     //[self sendDataGyro:1 withTime:[[NSDate date] timeIntervalSince1970] withGyroX:acceleration.x withGyroY:acceleration.y withGyroZ:acceleration.z];
@@ -207,7 +208,7 @@
 
 - (void)sendDataToServer:(int)id withTime:(double)currentTime withAccX:(double)accX withAccY:(double)accY withAccZ:(double)accZ withGyroX:(double)gyroX withGyroY:(double)gyroY withGyroZ:(double)gyroZ{
     
-    NSString* dbURL = @"http://128.113.106.108/web-motion-learner/get_data.php?";
+    NSString* dbURL = @"http://128.113.106.36/web-motion-learner/get_data.php?";
     
     NSURL *url = [NSURL URLWithString:dbURL];
     //Prepare request

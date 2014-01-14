@@ -24,6 +24,8 @@
 		84CE510B16F0F0C600668238 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CE510916F0F0C600668238 /* MainStoryboard.storyboard */; };
 		84CE510E16F0F0C600668238 /* NaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CE510D16F0F0C600668238 /* NaviViewController.m */; };
 		84CE511516F0FB3C00668238 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CE511416F0FB3C00668238 /* CoreMotion.framework */; };
+		F5F66BAC1883495200985E4C /* KBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F66BAA1883495200985E4C /* KBViewController.m */; };
+		F5F66BAD1883495200985E4C /* KBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5F66BAB1883495200985E4C /* KBViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,9 @@
 		84CE510C16F0F0C600668238 /* NaviViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NaviViewController.h; sourceTree = "<group>"; };
 		84CE510D16F0F0C600668238 /* NaviViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NaviViewController.m; sourceTree = "<group>"; };
 		84CE511416F0FB3C00668238 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		F5F66BA91883495200985E4C /* KBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBViewController.h; sourceTree = "<group>"; };
+		F5F66BAA1883495200985E4C /* KBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBViewController.m; sourceTree = "<group>"; };
+		F5F66BAB1883495200985E4C /* KBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KBViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +120,9 @@
 				843313C11703CEA2006AD8A5 /* StatsViewController.h */,
 				843313C21703CEA3006AD8A5 /* StatsViewController.m */,
 				843313C31703CEA3006AD8A5 /* StatsViewController.xib */,
+				F5F66BA91883495200985E4C /* KBViewController.h */,
+				F5F66BAA1883495200985E4C /* KBViewController.m */,
+				F5F66BAB1883495200985E4C /* KBViewController.xib */,
 			);
 			path = SensorDataCollector;
 			sourceTree = "<group>";
@@ -188,6 +196,7 @@
 				84CE50FC16F0F0C600668238 /* InfoPlist.strings in Resources */,
 				84CE510416F0F0C600668238 /* Default.png in Resources */,
 				84CE510616F0F0C600668238 /* Default@2x.png in Resources */,
+				F5F66BAD1883495200985E4C /* KBViewController.xib in Resources */,
 				84CE510816F0F0C600668238 /* Default-568h@2x.png in Resources */,
 				84CE510B16F0F0C600668238 /* MainStoryboard.storyboard in Resources */,
 				843313C51703CEA3006AD8A5 /* StatsViewController.xib in Resources */,
@@ -203,6 +212,7 @@
 			files = (
 				84CE50FE16F0F0C600668238 /* main.m in Sources */,
 				84CE510216F0F0C600668238 /* NaviAppDelegate.m in Sources */,
+				F5F66BAC1883495200985E4C /* KBViewController.m in Sources */,
 				84CE510E16F0F0C600668238 /* NaviViewController.m in Sources */,
 				84C4602F17027CD600A7986E /* SelectActivityViewController.m in Sources */,
 				84C46032170280EF00A7986E /* activityInfo.m in Sources */,

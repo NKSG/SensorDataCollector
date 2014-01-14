@@ -102,7 +102,7 @@
 - (void)sendDataAcc:(int)id withTime:(double)currenttime withAccX:(double)accX withAccY:(double)accY withAccZ:(double)accZ{
     
     if (true){
-        NSString* dbURL = @"http://128.113.106.108:10035/web-motion-learner/get_data.php";
+        NSString* dbURL = @"http://128.113.106.36:10035/web-motion-learner/get_data.php";
         
         NSURL *url = [NSURL URLWithString:dbURL];
         //Prepare reqeust
@@ -221,7 +221,6 @@
     //NSLog(@"updateInterval: %f", acceleration.x);
     
     self.labelX.text = [NSString stringWithFormat:@"%f", acceleration.x];
-    
     self.labelY.text = [NSString stringWithFormat:@"%f", acceleration.y];
     self.labelZ.text = [NSString stringWithFormat:@"%f", acceleration.z];
     
@@ -230,7 +229,7 @@
     self.progressZ.progress = ABS(acceleration.z);
     
     //if(self.flag){
-    NSLog(@"%f",[[NSDate date] timeIntervalSince1970]);
+    //NSLog(@"%f",[[NSDate date] timeIntervalSince1970]);
     
         [self sendDataToServer:1 withTime:[[NSDate date] timeIntervalSince1970] withAccX:acceleration.x withAccY:acceleration.y withAccZ:acceleration.z withGyroX:[self.gyroLabelX.text doubleValue] withGyroY:[self.gyroLabelY.text doubleValue] withGyroZ:[self.gyroLabelZ.text doubleValue] withHeading:[self.heandingInfo.text doubleValue]];
         //self.flag = !self.flag;
@@ -249,7 +248,7 @@
     
     NSLog(@"Sending request");
     //NSString* dbURL = @"http://128.113.106.26/web-motion-learner/get_data.php?";
-    NSString* dbURL = @"http://128.113.106.26:8080/motion-detector/services/data/add";
+    NSString* dbURL = @"http://128.113.106.36:8080/motion-detector/services/data/add";
     
     NSURL *url = [NSURL URLWithString:dbURL];
     //Prepare reqeust
